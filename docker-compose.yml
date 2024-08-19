@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "80:80"
+      - "80:80"  # Ensure this is correctly set
     volumes:
       - .:/var/www/html
     depends_on:
@@ -20,4 +20,4 @@ services:
       MYSQL_USER: myuser
       MYSQL_PASSWORD: mypassword
     ports:
-      - "3306:3306"
+      - "3306:3306"  # This is for MySQL, not needed for Render in most cases

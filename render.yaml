@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: php-app
+    env: docker
+    plan: free
+    dockerfile_path: ./Dockerfile
+    ports:
+      - port: 80
+        type: HTTP
